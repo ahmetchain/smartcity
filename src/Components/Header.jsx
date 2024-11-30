@@ -2,12 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaBars } from "react-icons/fa"; // Importing the hamburger icon
+import { FaBars } from "react-icons/fa"; // Menü ikonu
 import Tuzla from "../assets/tuzla-logo.webp";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Menu state
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Menü durumu
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Header = () => {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition duration-300 ${
           isScrolled
-            ? "bg-gray-900/80 backdrop-blur-lg shadow-xl"
+            ? "bg-white/90 backdrop-blur-lg shadow-xl"
             : "bg-transparent"
         }`}
       >
@@ -63,62 +63,62 @@ const Header = () => {
             />
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Masaüstü Navigasyon */}
           <nav className="hidden lg:flex items-center space-x-6">
             <a
               href="#"
               onClick={handleNavigateHome}
-              className="text-[#94a3b8] hover:text-white"
+              className="text-gray-700 hover:text-gray-900"
             >
               Anasayfa
             </a>
             <a
               href="#details"
               onClick={(e) => handleSmoothScroll(e, "#details")}
-              className="text-[#94a3b8] hover:text-white"
+              className="text-gray-700 hover:text-gray-900"
             >
               Etkinlik Detayları
             </a>
             <a
               href="#agenda"
               onClick={(e) => handleSmoothScroll(e, "#agenda")}
-              className="text-[#94a3b8] hover:text-white"
+              className="text-gray-700 hover:text-gray-900"
             >
               Program
             </a>
             <a
               href="#speakers"
               onClick={(e) => handleSmoothScroll(e, "#speakers")}
-              className="text-[#94a3b8] hover:text-white"
+              className="text-gray-700 hover:text-gray-900"
             >
               Konuşmacılar
             </a>
             <a
               href="#sponsors"
               onClick={(e) => handleSmoothScroll(e, "#sponsors")}
-              className="text-[#94a3b8] hover:text-white"
+              className="text-gray-700 hover:text-gray-900"
             >
               Sponsorlar
             </a>
             <a
               href="#footer"
               onClick={(e) => handleSmoothScroll(e, "#footer")}
-              className="text-[#94a3b8] hover:text-white"
+              className="text-gray-700 hover:text-gray-900"
             >
               İletişim
             </a>
             <button
               onClick={handleNavigateToApply}
-              className="ml-4 bg-gradient-to-r from-blue-500 to-teal-500 text-white py-2 px-4 rounded-lg shadow hover:from-blue-600 hover:to-teal-400 transition duration-300"
+              className="ml-4 bg-gradient-to-r from-gray-700 to-gray-900 text-white py-2 px-4 rounded-lg shadow hover:from-blue-600 hover:to-teal-400 transition duration-300"
             >
               İdeathon Başvuru
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobil Menü Butonu */}
           <div className="lg:hidden flex items-center">
             <button
-              className="text-[#94a3b8] hover:text-white focus:outline-none"
+              className="text-gray-700 hover:text-gray-900 focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <FaBars size={24} />
@@ -127,27 +127,27 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Mobile Menu */}
+      {/* Mobil Menü */}
       {isMenuOpen && (
         <>
-          {/* Overlay */}
+          {/* Arkaplan Kapatıcı */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0 bg-black bg-opacity-25 z-40"
             onClick={() => setIsMenuOpen(false)}
           ></div>
 
-          {/* Menu Content */}
-          <div className="fixed top-0 right-0 mt-16 mr-6 w-48 bg-[#1A2236] rounded-md shadow-lg py-2 z-50">
+          {/* Menü İçeriği */}
+          <div className="fixed top-0 right-0 mt-16 mr-6 w-48 bg-white rounded-md shadow-lg py-2 z-50">
             <a
               href="#"
               onClick={(e) => handleNavigateHome(e)}
-              className="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-800"
+              className="block px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100"
             >
               Anasayfa
             </a>
             <button
               onClick={handleNavigateToApply}
-              className="w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-800"
+              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100"
             >
               İdeathon Başvuru
             </button>
