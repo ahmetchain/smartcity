@@ -1,5 +1,3 @@
-// IdeathonApply.jsx
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -30,7 +28,7 @@ const IdeathonApply = () => {
   };
 
   const handleKVKKClick = () => {
-    navigate("/kvkk"); // Update this path to your KVKK page
+    navigate("/kvkk");
   };
 
   const handleSubmit = (e) => {
@@ -39,86 +37,79 @@ const IdeathonApply = () => {
       alert("Lütfen tüm şartları kabul edin.");
       return;
     }
-    // Handle form submission logic here
     console.log("Form submitted:", formData);
   };
 
   return (
-    <section className="py-16 bg-dots text-white min-h-screen">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+    <section className="py-16 bg-dots text-white min-h-screen flex items-center">
+      <div className="container mx-auto px-4 mt-12">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
           Ideathon Başvuru Formu
         </h2>
-        <form
-          onSubmit={handleSubmit}
-          className="bg-[#1A2236] p-8 rounded-lg shadow-lg max-w-3xl mx-auto"
-        >
+        <form onSubmit={handleSubmit} className="space-y-6 max-w-3xl mx-auto">
           {/* Team Member 1 */}
-          <h3 className="text-2xl font-semibold text-blue-300 mb-4">
-            1. Ekip Üyesi (Zorunlu)
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <input
-              type="text"
-              name="member1Name"
-              placeholder="İsim Soyisim"
-              value={formData.member1Name}
-              onChange={handleInputChange}
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
-            <input
-              type="tel"
-              name="member1Phone"
-              placeholder="Telefon Numarası"
-              value={formData.member1Phone}
-              onChange={handleInputChange}
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
-            <input
-              type="email"
-              name="member1Email"
-              placeholder="E-posta Adresi"
-              value={formData.member1Email}
-              onChange={handleInputChange}
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full md:col-span-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
+          <div>
+            <h3 className="text-xl font-semibold text-blue-300 mb-4">
+              1. Ekip Üyesi (Zorunlu)
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input
+                type="text"
+                name="member1Name"
+                placeholder="İsim Soyisim"
+                value={formData.member1Name}
+                onChange={handleInputChange}
+                className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <input
+                type="tel"
+                name="member1Phone"
+                placeholder="Telefon Numarası"
+                value={formData.member1Phone}
+                onChange={handleInputChange}
+                className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <input
+                type="email"
+                name="member1Email"
+                placeholder="E-posta Adresi"
+                value={formData.member1Email}
+                onChange={handleInputChange}
+                className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full md:col-span-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
           </div>
 
-          {/* Team Member 2 */}
-          <h3 className="text-2xl font-semibold text-blue-300 mb-4">
-            2. Ekip Üyesi (Opsiyonel)
-          </h3>
-          <div className="mb-6">
-            <input
-              type="text"
-              name="member2Name"
-              placeholder="İsim Soyisim"
-              value={formData.member2Name}
-              onChange={handleInputChange}
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-
-          {/* Team Member 3 */}
-          <h3 className="text-2xl font-semibold text-blue-300 mb-4">
-            3. Ekip Üyesi (Opsiyonel)
-          </h3>
-          <div className="mb-6">
-            <input
-              type="text"
-              name="member3Name"
-              placeholder="İsim Soyisim"
-              value={formData.member3Name}
-              onChange={handleInputChange}
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
+          {/* Optional Members */}
+          <div>
+            <h3 className="text-xl font-semibold text-blue-300 mb-4">
+              2. ve 3. Ekip Üyesi (Opsiyonel)
+            </h3>
+            <div className="grid grid-cols-1 gap-6">
+              <input
+                type="text"
+                name="member2Name"
+                placeholder="2. Üye - İsim Soyisim"
+                value={formData.member2Name}
+                onChange={handleInputChange}
+                className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="text"
+                name="member3Name"
+                placeholder="3. Üye - İsim Soyisim"
+                value={formData.member3Name}
+                onChange={handleInputChange}
+                className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
           </div>
 
           {/* Idea Summary */}
-          <div className="mb-6">
+          <div>
             <label className="block text-lg font-semibold text-gray-300 mb-2">
               Fikir Özeti (Maksimum 500 kelime)
             </label>
@@ -127,7 +118,7 @@ const IdeathonApply = () => {
               value={formData.ideaSummary}
               onChange={handleInputChange}
               rows="6"
-              maxLength="3000" // Approximate 500 words
+              maxLength="3000"
               className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Fikir özetinizi buraya yazın..."
               required
@@ -135,7 +126,7 @@ const IdeathonApply = () => {
           </div>
 
           {/* Upload Presentation */}
-          <div className="mb-6">
+          <div>
             <label className="block text-lg font-semibold text-gray-300 mb-2">
               Sunum Yükleme (PDF / PPTX / PPT)
             </label>
@@ -150,42 +141,38 @@ const IdeathonApply = () => {
           </div>
 
           {/* Terms & Conditions */}
-          <div className="mb-6">
-            <label className="flex items-center text-gray-400">
-              <input
-                type="checkbox"
-                name="kvkkAccepted"
-                checked={formData.kvkkAccepted}
-                onChange={handleInputChange}
-                className="mr-2 rounded border-gray-700 text-blue-500 focus:ring-0"
-                required
-              />
-              <span>
-                KVKK şartlarını{" "}
-                <span
-                  onClick={handleKVKKClick}
-                  className="text-blue-500 underline cursor-pointer"
-                >
-                  kabul ediyorum
-                </span>
-                .
+          <div className="flex items-center mb-4">
+            <input
+              type="checkbox"
+              name="kvkkAccepted"
+              checked={formData.kvkkAccepted}
+              onChange={handleInputChange}
+              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+            <span className="text-gray-400 text-sm">
+              KVKK şartlarını{" "}
+              <span
+                onClick={handleKVKKClick}
+                className="text-blue-500 underline cursor-pointer"
+              >
+                kabul ediyorum
               </span>
-            </label>
+              .
+            </span>
           </div>
-          <div className="mb-6">
-            <label className="flex items-center text-gray-400">
-              <input
-                type="checkbox"
-                name="termsAccepted"
-                checked={formData.termsAccepted}
-                onChange={handleInputChange}
-                className="mr-2 rounded border-gray-700 text-blue-500 focus:ring-0"
-                required
-              />
-              <span>
-                Teknik şartnamede yer alan başvuru şartlarını kabul ediyorum.
-              </span>
-            </label>
+          <div className="flex items-center mb-6">
+            <input
+              type="checkbox"
+              name="termsAccepted"
+              checked={formData.termsAccepted}
+              onChange={handleInputChange}
+              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+            <span className="text-gray-400 text-sm">
+              Teknik şartnamede yer alan başvuru şartlarını kabul ediyorum.
+            </span>
           </div>
 
           {/* Submit Button */}

@@ -4,19 +4,19 @@ const RegisterForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    phone: "",
     email: "",
-    status: [],
-    education: [],
+    events: [],
     termsAccepted: false,
   });
 
-  const handleCheckboxChange = (e, field) => {
+  const handleCheckboxChange = (e) => {
     const { value, checked } = e.target;
     setFormData((prev) => {
-      const updatedField = checked
-        ? [...prev[field], value]
-        : prev[field].filter((item) => item !== value);
-      return { ...prev, [field]: updatedField };
+      const updatedEvents = checked
+        ? [...prev.events, value]
+        : prev.events.filter((event) => event !== value);
+      return { ...prev, events: updatedEvents };
     });
   };
 
@@ -41,10 +41,10 @@ const RegisterForm = () => {
           Kayıt Alanı
         </h2>
         <p className="text-gray-400 text-center mb-8">
-          Kaydınızı buradan kolayca yapabilirsiniz!
+          Katılmak istediğiniz etkinlikleri seçin ve bilgilerinizi doldurun!
         </p>
         <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
-          {/* Name and Email */}
+          {/* Name and Contact Information */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label
@@ -85,6 +85,24 @@ const RegisterForm = () => {
           </div>
           <div>
             <label
+              htmlFor="phone"
+              className="block text-gray-300 mb-2 text-sm font-medium"
+            >
+              Cep Telefonu
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="0555-555-5555"
+              value={formData.phone}
+              onChange={handleInputChange}
+              className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label
               htmlFor="email"
               className="block text-gray-300 mb-2 text-sm font-medium"
             >
@@ -102,55 +120,28 @@ const RegisterForm = () => {
             />
           </div>
 
-          {/* Status */}
+          {/* Events */}
           <fieldset className="space-y-2">
             <legend className="text-lg font-semibold text-gray-300">
-              Statüler
-            </legend>
-            <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
-              {[
-                "Öğrenciyim",
-                "Çalışıyorum",
-                "Staj arıyorum",
-                "Yatırım arıyorum",
-                "Stajyerim",
-                "İş arıyorum",
-                "Girişimim var",
-              ].map((status) => (
-                <label
-                  key={status}
-                  className="flex items-center text-gray-400 cursor-pointer"
-                >
-                  <input
-                    type="checkbox"
-                    value={status}
-                    onChange={(e) => handleCheckboxChange(e, "status")}
-                    className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                  {status}
-                </label>
-              ))}
-            </div>
-          </fieldset>
-
-          {/* Education */}
-          <fieldset className="space-y-2">
-            <legend className="text-lg font-semibold text-gray-300">
-              Hangi Eğitime Katılmak İstiyorsunuz?
+              Katılmak İstediğiniz Etkinlikler
             </legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {["Python Eğitimi", "Excel Eğitimi"].map((education) => (
+              {[
+                "23 Aralık Akıllı Şehir Teknolojileri Panel",
+                "24 Aralık Python Eğitimi",
+                "24 Aralık Excel Eğitimi",
+              ].map((event) => (
                 <label
-                  key={education}
+                  key={event}
                   className="flex items-center text-gray-400 cursor-pointer"
                 >
                   <input
                     type="checkbox"
-                    value={education}
-                    onChange={(e) => handleCheckboxChange(e, "education")}
+                    value={event}
+                    onChange={handleCheckboxChange}
                     className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
-                  {education}
+                  {event}
                 </label>
               ))}
             </div>

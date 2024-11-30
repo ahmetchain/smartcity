@@ -21,7 +21,7 @@ const HeroSection = () => {
           kentsel inovasyonun potansiyelini keşfetmek için tasarlanmıştır.
         </p>
         <a
-          href="#register"
+          href="/register"
           className="bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-6 lg:px-8 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105"
         >
           Şimdi Kaydol

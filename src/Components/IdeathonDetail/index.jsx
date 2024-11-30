@@ -1,5 +1,3 @@
-// IdeathonDetail.jsx
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
@@ -33,15 +31,23 @@ const IdeathonDetail = () => {
           geleceğin Tuzla'sını şekillendirmek ister misin?
         </p>
 
-        {/* Teknik Şartname İndirme Butonu */}
-        <div className="flex justify-center mb-12">
+        {/* Teknik Şartname ve Sunum Taslağı İndirme Butonları */}
+        <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
           <a
-            href="/path/to/teknik-sartname.pdf" // PDF dosyanızın gerçek yolunu güncelleyin
+            href="/public/IdeathonTeknikSartname.pdf"
             download
-            className="flex items-center bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-6 rounded-full shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105"
+            className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105 text-center"
           >
             <FaDownload className="mr-2" />
             Teknik Şartnameyi İndirin
+          </a>
+          <a
+            href="/public/FikirYarismasiSunumTaslaği.pptx"
+            download
+            className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105 text-center"
+          >
+            <FaDownload className="mr-2" />
+            Sunum Taslağını İndirin
           </a>
         </div>
 
@@ -84,72 +90,11 @@ const IdeathonDetail = () => {
           </ul>
         </div>
 
-        {/* Katılım Koşulları */}
-        <div className="mb-12">
-          <h2 className="text-4xl font-bold text-blue-300 mb-6 text-center">
-            Katılım Koşulları
-          </h2>
-          <ul className="list-disc list-inside text-gray-300 space-y-4 max-w-3xl mx-auto text-lg">
-            <li>
-              Yarışmaya bireysel veya en fazla{" "}
-              <span className="font-semibold text-white underline">
-                3 kişilik ekipler
-              </span>{" "}
-              halinde katılabilirsiniz.
-            </li>
-            <li>
-              Katılımcıların{" "}
-              <span className="font-semibold text-white underline">
-                18 yaşından büyük
-              </span>{" "}
-              olması gerekmektedir.
-            </li>
-            <li>
-              Fikirler, Tuzla Belediyesi tarafından uygulanabilir olmalı ve{" "}
-              <span className="font-semibold text-white underline">
-                Tuzla'nın yerel konularına odaklanmalıdır
-              </span>
-              .
-            </li>
-          </ul>
-        </div>
-
-        {/* Ödüller */}
-        <div className="mb-12">
-          <h2 className="text-4xl font-bold text-blue-300 mb-6 text-center">
-            Ödüller
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="relative bg-[#1A2236] rounded-xl p-6 text-center hover:shadow-xl transform hover:scale-105 transition duration-300">
-              {/* Parlayan Çerçeve */}
-              <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-blue-500 transition duration-300"></div>
-              <h3 className="text-3xl font-semibold text-blue-300 mb-4">
-                Birinci Ödül
-              </h3>
-              <p className="text-xl text-white">MacBook Pro</p>
-            </div>
-            <div className="relative bg-[#1A2236] rounded-xl p-6 text-center hover:shadow-xl transform hover:scale-105 transition duration-300">
-              <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-blue-500 transition duration-300"></div>
-              <h3 className="text-3xl font-semibold text-blue-300 mb-4">
-                İkinci Ödül
-              </h3>
-              <p className="text-xl text-white">iPhone 14</p>
-            </div>
-            <div className="relative bg-[#1A2236] rounded-xl p-6 text-center hover:shadow-xl transform hover:scale-105 transition duration-300">
-              <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-blue-500 transition duration-300"></div>
-              <h3 className="text-3xl font-semibold text-blue-300 mb-4">
-                Üçüncü Ödül
-              </h3>
-              <p className="text-xl text-white">Çeyrek Altın</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Başvuru Butonu */}
-        <div className="flex justify-center">
+        {/* Ödüller ve Başvuru */}
+        <div className="flex justify-center mt-8">
           <button
             onClick={handleApplyClick}
-            className="bg-gradient-to-r from-blue-500 to-teal-400 text-white py-4 px-10 rounded-full shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105 text-lg"
+            className="bg-gradient-to-r from-blue-500 to-teal-400 text-white py-4 px-10 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105 text-lg"
           >
             Başvuru Yap
           </button>
