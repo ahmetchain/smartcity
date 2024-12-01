@@ -33,7 +33,7 @@ const EventDetails = () => {
                 Konum
               </h3>
               <p className="text-lg md:text-xl text-gray-600">
-                Tuzla Belediyesi Teknoloji Geliştirme Merkezi
+                Tuzla Belediyesi Teknoloji Geliştirme Merkezi, Şelale Park Yerleşkesi
               </p>
             </div>
           </div>
@@ -45,7 +45,7 @@ const EventDetails = () => {
                 Konular
               </h3>
               <p className="text-lg md:text-xl text-gray-600">
-                Sürdürülebilirlik, IoT, Blockchain, Büyük Veri, Dijital İkizler
+                Sürdürülebilirlik, IoT, Blockchain, Büyük Veri, Dijital İkiz
               </p>
             </div>
           </div>

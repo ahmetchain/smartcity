@@ -14,9 +14,11 @@ const IdeathonOverview = () => {
     >
       <div className="container mx-auto px-4 text-center">
         {/* Enhanced Title with Gradient */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-4">
+        <h2 className="text-4xl md:text-5xl lg:h-16 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-4">
           Ideathon: Fikirlerden Geleceğe
         </h2>
+        {/* Date below the title */}
+        <p className="text-lg md:text-xl text-gray-600 mb-4">25 Aralık 2024</p>
         {/* Slogan below the title */}
         <p className="text-lg md:text-xl text-gray-600 italic mb-8">
           "Birlikte düşün, birlikte üret, şehirlerin geleceğini tasarla!"

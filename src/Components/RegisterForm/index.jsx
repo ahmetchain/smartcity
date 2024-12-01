@@ -158,11 +158,11 @@ const RegisterForm = () => {
               className="mr-3 h-6 w-6 appearance-none border-2 border-gray-300 rounded-lg bg-white checked:border-none checked:bg-gradient-to-r checked:from-blue-600 checked:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
-            <span className="text-gray-600 text-sm">
-              Okudum, onaylıyorum.{" "}
-              <a href="/kvkk" className="text-blue-600 underline">
-                KVKK metnini okuyun.
+              <span className="text-gray-600 text-sm">
+              <a href="/kvkk" className="text-blue-600 underline mr-1">
+                KVKK 
               </a>
+              metnini okudum ve onaylıyorum.
             </span>
           </div>
 

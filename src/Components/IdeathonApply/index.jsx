@@ -151,10 +151,10 @@ const IdeathonApply = () => {
               required
             />
             <span className="text-gray-600 text-sm">
-              Okudum, onaylıyorum.{" "}
-              <a href="/kvkk" className="text-blue-600 underline">
-                KVKK metnini okuyun.
+              <a href="/kvkk" className="text-blue-600 underline mr-1">
+                KVKK 
               </a>
+              metnini okudum ve onaylıyorum.
             </span>
           </div>
 
