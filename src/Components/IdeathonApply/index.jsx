@@ -41,15 +41,15 @@ const IdeathonApply = () => {
   };
 
   return (
-    <section className="py-16 bg-dots text-white min-h-screen flex items-center">
+    <section className="py-16 bg-gray-50 text-gray-800 min-h-screen flex items-center">
       <div className="container mx-auto px-4 mt-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
           Ideathon Başvuru Formu
         </h2>
         <form onSubmit={handleSubmit} className="space-y-6 max-w-3xl mx-auto">
           {/* Team Member 1 */}
           <div>
-            <h3 className="text-xl font-semibold text-blue-300 mb-4">
+            <h3 className="text-xl font-semibold text-gray-700 mb-4">
               1. Ekip Üyesi (Zorunlu)
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -59,7 +59,7 @@ const IdeathonApply = () => {
                 placeholder="İsim Soyisim"
                 value={formData.member1Name}
                 onChange={handleInputChange}
-                className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-white border border-gray-300 rounded-lg p-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
               <input
@@ -68,7 +68,7 @@ const IdeathonApply = () => {
                 placeholder="Telefon Numarası"
                 value={formData.member1Phone}
                 onChange={handleInputChange}
-                className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-white border border-gray-300 rounded-lg p-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
               <input
@@ -77,7 +77,7 @@ const IdeathonApply = () => {
                 placeholder="E-posta Adresi"
                 value={formData.member1Email}
                 onChange={handleInputChange}
-                className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full md:col-span-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-white border border-gray-300 rounded-lg p-3 w-full md:col-span-2 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
             </div>
@@ -85,7 +85,7 @@ const IdeathonApply = () => {
 
           {/* Optional Members */}
           <div>
-            <h3 className="text-xl font-semibold text-blue-300 mb-4">
+            <h3 className="text-xl font-semibold text-gray-700 mb-4">
               2. ve 3. Ekip Üyesi (Opsiyonel)
             </h3>
             <div className="grid grid-cols-1 gap-6">
@@ -95,7 +95,7 @@ const IdeathonApply = () => {
                 placeholder="2. Üye - İsim Soyisim"
                 value={formData.member2Name}
                 onChange={handleInputChange}
-                className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-white border border-gray-300 rounded-lg p-3 w-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
@@ -103,14 +103,14 @@ const IdeathonApply = () => {
                 placeholder="3. Üye - İsim Soyisim"
                 value={formData.member3Name}
                 onChange={handleInputChange}
-                className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-white border border-gray-300 rounded-lg p-3 w-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
           </div>
 
           {/* Idea Summary */}
           <div>
-            <label className="block text-lg font-semibold text-gray-300 mb-2">
+            <label className="block text-lg font-semibold text-gray-700 mb-2">
               Fikir Özeti (Maksimum 500 kelime)
             </label>
             <textarea
@@ -119,7 +119,7 @@ const IdeathonApply = () => {
               onChange={handleInputChange}
               rows="6"
               maxLength="3000"
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 rounded-lg p-3 w-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Fikir özetinizi buraya yazın..."
               required
             ></textarea>
@@ -127,7 +127,7 @@ const IdeathonApply = () => {
 
           {/* Upload Presentation */}
           <div>
-            <label className="block text-lg font-semibold text-gray-300 mb-2">
+            <label className="block text-lg font-semibold text-gray-700 mb-2">
               Sunum Yükleme (PDF / PPTX / PPT)
             </label>
             <input
@@ -135,7 +135,7 @@ const IdeathonApply = () => {
               name="presentation"
               accept=".pdf, .pptx, .ppt"
               onChange={handleInputChange}
-              className="text-gray-400"
+              className="text-gray-600"
               required
             />
           </div>
@@ -147,14 +147,14 @@ const IdeathonApply = () => {
               name="kvkkAccepted"
               checked={formData.kvkkAccepted}
               onChange={handleInputChange}
-              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-300 rounded-lg bg-white checked:border-none checked:bg-gradient-to-r checked:from-blue-600 checked:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
-            <span className="text-gray-400 text-sm">
+            <span className="text-gray-600 text-sm">
               KVKK şartlarını{" "}
               <span
                 onClick={handleKVKKClick}
-                className="text-blue-500 underline cursor-pointer"
+                className="text-blue-600 underline cursor-pointer"
               >
                 kabul ediyorum
               </span>
@@ -167,10 +167,10 @@ const IdeathonApply = () => {
               name="termsAccepted"
               checked={formData.termsAccepted}
               onChange={handleInputChange}
-              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-300 rounded-lg bg-white checked:border-none checked:bg-gradient-to-r checked:from-blue-600 checked:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
-            <span className="text-gray-400 text-sm">
+            <span className="text-gray-600 text-sm">
               Teknik şartnamede yer alan başvuru şartlarını kabul ediyorum.
             </span>
           </div>
@@ -178,7 +178,7 @@ const IdeathonApply = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold rounded-lg shadow-md hover:from-blue-600 hover:to-teal-500 transition duration-300"
+            className="w-full py-3 bg-gradient-to-r from-blue-600 to-teal-500 text-white font-semibold rounded-lg shadow-md hover:from-blue-700 hover:to-teal-600 transition duration-300"
           >
             Başvuruyu Gönder
           </button>

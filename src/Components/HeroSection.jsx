@@ -11,7 +11,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-700 mb-4 max-w-3xl">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-4 max-w-3xl">
           Akıllı Şehir Teknolojileri Zirvesi & Ideathon
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 max-w-2xl">
@@ -20,7 +20,7 @@ const HeroSection = () => {
         </p>
         <a
           href="/register"
-          className="bg-gradient-to-r from-gray-700 to-gray-900 text-white py-3 px-6 lg:px-8 rounded-lg shadow-lg hover:from-gray-800 hover:to-black transition-transform transform hover:scale-105"
+          className="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-3 px-6 lg:px-8 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105"
         >
           Şimdi Kaydol
         </a>

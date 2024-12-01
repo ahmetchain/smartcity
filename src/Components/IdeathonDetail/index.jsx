@@ -10,17 +10,16 @@ const IdeathonDetail = () => {
   };
 
   return (
-    <section className="py-12 mt-14 bg-[#111622] text-white relative">
-      {/* Arka plan grid deseni */}
+    <section className="py-12 mt-14  text-gray-800 relative">
       <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none"></div>
 
       <div className="container mx-auto px-4">
         {/* Başlık ve Hikaye */}
-        <h1 className="text-5xl md:text-6xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400 mb-12">
+        <h1 className="text-5xl lg:h-[70px] md:text-6xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-12">
           Tuzla Belediyesi Teknoloji Fikir Maratonu
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto text-center mb-12">
-          <span className="text-white font-semibold underline">
+        <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-4xl mx-auto text-center mb-12">
+          <span className="text-gray-800 font-semibold underline">
             Genç fikirler, yenilikçi çözümler!
           </span>{" "}
           Tuzla Belediyesi tarafından düzenlenen Teknoloji Fikir Maratonu,
@@ -36,7 +35,7 @@ const IdeathonDetail = () => {
           <a
             href="/public/IdeathonTeknikSartname.pdf"
             download
-            className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105 text-center"
+            className="flex items-center justify-center bg-gradient-to-r from-blue-600 to-teal-500 text-white py-3 px-6 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105 text-center"
           >
             <FaDownload className="mr-2" />
             Teknik Şartnameyi İndirin
@@ -44,7 +43,7 @@ const IdeathonDetail = () => {
           <a
             href="/public/FikirYarismasiSunumTaslaği.pptx"
             download
-            className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-teal-400 text-white py-3 px-6 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105 text-center"
+            className="flex items-center justify-center bg-gradient-to-r from-blue-600 to-teal-500 text-white py-3 px-6 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105 text-center"
           >
             <FaDownload className="mr-2" />
             Sunum Taslağını İndirin
@@ -53,10 +52,10 @@ const IdeathonDetail = () => {
 
         {/* Yarışma Hakkında */}
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-blue-300 mb-6 text-center">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-6 text-center">
             Yarışma Hakkında
           </h2>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto text-center">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto text-center">
             Tuzla Belediyesi Teknoloji Fikir Maratonu, gençlerin yenilikçi
             düşüncelerini ve teknolojik becerilerini kullanarak, Tuzla'nın
             karşılaştığı kentsel sorunlara sürdürülebilir çözümler üretmelerini
@@ -68,18 +67,18 @@ const IdeathonDetail = () => {
 
         {/* Yarışma Temaları */}
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-blue-300 mb-6 text-center">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-6 text-center">
             Yarışma Temaları
           </h2>
-          <ul className="list-disc list-inside text-gray-300 space-y-4 max-w-3xl mx-auto text-lg">
+          <ul className="list-disc list-inside text-gray-600 space-y-4 max-w-3xl mx-auto text-lg">
             <li>
-              <span className="font-semibold text-white underline">
+              <span className="font-semibold text-gray-800 underline">
                 Akıllı Şehir Teknolojileri
               </span>{" "}
               (IoT, yapay zeka, dijital ikiz, atık yönetimi vb.)
             </li>
             <li>
-              <span className="font-semibold text-white underline">
+              <span className="font-semibold text-gray-800 underline">
                 Yenilenebilir Enerji ve Sürdürülebilirlik
               </span>
             </li>
@@ -94,7 +93,7 @@ const IdeathonDetail = () => {
         <div className="flex justify-center mt-8">
           <button
             onClick={handleApplyClick}
-            className="bg-gradient-to-r from-blue-500 to-teal-400 text-white py-4 px-10 rounded-lg shadow-lg hover:from-blue-600 hover:to-teal-500 transition-transform transform hover:scale-105 text-lg"
+            className="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-4 px-10 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105 text-lg"
           >
             Başvuru Yap
           </button>

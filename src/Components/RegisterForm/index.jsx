@@ -35,12 +35,12 @@ const RegisterForm = () => {
   };
 
   return (
-    <section className="py-16 bg-dots text-white min-h-screen flex items-center">
+    <section className="py-16  text-gray-800 min-h-screen flex items-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl mt-10 sm:mt-0 md:text-4xl font-bold mb-4 text-center">
+        <h2 className="text-3xl mt-10 sm:mt-0 md:text-4xl font-bold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">
           Kayıt Alanı
         </h2>
-        <p className="text-gray-400 text-center mb-8">
+        <p className="text-gray-600 text-center mb-8">
           Katılmak istediğiniz etkinlikleri seçin ve bilgilerinizi doldurun!
         </p>
         <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
@@ -49,7 +49,7 @@ const RegisterForm = () => {
             <div>
               <label
                 htmlFor="firstName"
-                className="block text-gray-300 mb-2 text-sm font-medium"
+                className="block text-gray-700 mb-2 text-sm font-medium"
               >
                 İsim
               </label>
@@ -60,14 +60,14 @@ const RegisterForm = () => {
                 placeholder="Adınızı girin..."
                 value={formData.firstName}
                 onChange={handleInputChange}
-                className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                className="bg-white border border-gray-300 rounded-lg p-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="lastName"
-                className="block text-gray-300 mb-2 text-sm font-medium"
+                className="block text-gray-700 mb-2 text-sm font-medium"
               >
                 Soyisim
               </label>
@@ -78,7 +78,7 @@ const RegisterForm = () => {
                 placeholder="Soyadınızı girin..."
                 value={formData.lastName}
                 onChange={handleInputChange}
-                className="bg-[#111622] border border-gray-700 rounded-lg p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                className="bg-white border border-gray-300 rounded-lg p-3 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                 required
               />
             </div>
@@ -86,7 +86,7 @@ const RegisterForm = () => {
           <div>
             <label
               htmlFor="phone"
-              className="block text-gray-300 mb-2 text-sm font-medium"
+              className="block text-gray-700 mb-2 text-sm font-medium"
             >
               Cep Telefonu
             </label>
@@ -97,14 +97,14 @@ const RegisterForm = () => {
               placeholder="0555-555-5555"
               value={formData.phone}
               onChange={handleInputChange}
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 rounded-lg p-3 w-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
           <div>
             <label
               htmlFor="email"
-              className="block text-gray-300 mb-2 text-sm font-medium"
+              className="block text-gray-700 mb-2 text-sm font-medium"
             >
               Email
             </label>
@@ -115,14 +115,14 @@ const RegisterForm = () => {
               placeholder="ornek@ornek.com"
               value={formData.email}
               onChange={handleInputChange}
-              className="bg-[#111622] border border-gray-700 rounded-lg p-3 w-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white border border-gray-300 rounded-lg p-3 w-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
 
           {/* Events */}
           <fieldset className="space-y-2">
-            <legend className="text-lg font-semibold text-gray-300">
+            <legend className="text-lg font-semibold text-gray-700">
               Katılmak İstediğiniz Etkinlikler
             </legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -133,13 +133,13 @@ const RegisterForm = () => {
               ].map((event) => (
                 <label
                   key={event}
-                  className="flex items-center text-gray-400 cursor-pointer"
+                  className="flex items-center text-gray-600 cursor-pointer"
                 >
                   <input
                     type="checkbox"
                     value={event}
                     onChange={handleCheckboxChange}
-                    className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="mr-3 h-6 w-6 appearance-none border-2 border-gray-300 rounded-lg bg-white checked:border-none checked:bg-gradient-to-r checked:from-blue-600 checked:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   {event}
                 </label>
@@ -155,12 +155,12 @@ const RegisterForm = () => {
               onChange={(e) =>
                 setFormData({ ...formData, termsAccepted: e.target.checked })
               }
-              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-700 rounded-lg bg-[#111622] checked:border-none checked:bg-gradient-to-r checked:from-blue-500 checked:to-teal-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="mr-3 h-6 w-6 appearance-none border-2 border-gray-300 rounded-lg bg-white checked:border-none checked:bg-gradient-to-r checked:from-blue-600 checked:to-teal-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
-            <span className="text-gray-400 text-sm">
+            <span className="text-gray-600 text-sm">
               Okudum, onaylıyorum.{" "}
-              <a href="#" className="text-blue-500 underline">
+              <a href="#" className="text-blue-600 underline">
                 KVKK metnini okuyun.
               </a>
             </span>
@@ -169,7 +169,7 @@ const RegisterForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full py-3 bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold rounded-lg shadow-md hover:from-blue-600 hover:to-teal-500 transition duration-300"
+            className="w-full py-3 bg-gradient-to-r from-blue-600 to-teal-500 text-white font-semibold rounded-lg shadow-md hover:from-blue-700 hover:to-teal-600 transition duration-300"
           >
             Kayıt Ol
           </button>

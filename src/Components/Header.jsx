@@ -43,6 +43,10 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleNavigateToRegister = () => {
+    navigate("/register");
+    setIsMenuOpen(false);
+  };
   return (
     <>
       <header
@@ -109,7 +113,7 @@ const Header = () => {
             </a>
             <button
               onClick={handleNavigateToApply}
-              className="ml-4 bg-gradient-to-r from-gray-700 to-gray-900 text-white py-2 px-4 rounded-lg shadow hover:from-blue-600 hover:to-teal-400 transition duration-300"
+              className="ml-4 bg-gradient-to-r from-blue-600 to-teal-500 text-white py-2 px-4 rounded-lg shadow hover:from-blue-700 hover:to-teal-600 transition duration-300"
             >
               İdeathon Başvuru
             </button>
@@ -145,6 +149,12 @@ const Header = () => {
             >
               Anasayfa
             </a>
+            <button
+              onClick={handleNavigateToRegister}
+              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+            >
+              Etkinlik Kayıt
+            </button>
             <button
               onClick={handleNavigateToApply}
               className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100"
