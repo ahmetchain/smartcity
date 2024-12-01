@@ -3,6 +3,7 @@ import LandingPage from "./Pages/LandingPage";
 import Register from "./Pages/Register";
 import IdeathonPage from "./Pages/IdeathonPage";
 import IdeathonApplyPage from "./Pages/IdeathonApplyPage";
+import KVKKPage from "./Pages/KVKK";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/ideathon-apply",
     element: <IdeathonApplyPage />,
+  },
+  {
+    path: "/kvkk",
+    element: <KVKKPage />,
   },
 ]);
 export function Router() {

@@ -160,7 +160,7 @@ const RegisterForm = () => {
             />
             <span className="text-gray-600 text-sm">
               Okudum, onaylıyorum.{" "}
-              <a href="#" className="text-blue-600 underline">
+              <a href="/kvkk" className="text-blue-600 underline">
                 KVKK metnini okuyun.
               </a>
             </span>

@@ -151,16 +151,13 @@ const IdeathonApply = () => {
               required
             />
             <span className="text-gray-600 text-sm">
-              KVKK şartlarını{" "}
-              <span
-                onClick={handleKVKKClick}
-                className="text-blue-600 underline cursor-pointer"
-              >
-                kabul ediyorum
-              </span>
-              .
+              Okudum, onaylıyorum.{" "}
+              <a href="/kvkk" className="text-blue-600 underline">
+                KVKK metnini okuyun.
+              </a>
             </span>
           </div>
+
           <div className="flex items-center mb-6">
             <input
               type="checkbox"
