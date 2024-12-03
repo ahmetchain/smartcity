@@ -11,6 +11,7 @@ import BarısYurduseven from "../assets/speakers/BarısYurduseven.jpg";
 import IlkemOzar from "../assets/speakers/IlkemOzar.jpg";
 import AnilTangül from "../assets/speakers/AnilTangül.jpg";
 import BetülErtem from "../assets/speakers/BetülErtemYildiz.jpg";
+import ErdemEris from "../assets/speakers/ErdemEris.jpg";
 
 const Speakers = () => {
   const speakers = [
@@ -100,8 +101,15 @@ const Speakers = () => {
       title: "Yönetişim, Risk ve Uyum Ortağı",
       company: "BDO Türkiye",
       photo: BetülErtem,
-      linkedin:
-        "https://www.linkedin.com/in/bet%C3%BCl-ertem-y%C4%B1ld%C4%B1z",
+      linkedin: "https://www.linkedin.com/in/bet%C3%BCl-ertem-y%C4%B1ld%C4%B1z",
+    },
+    {
+      name: "Erdem",
+      surname: "Eriş",
+      title: "Co-Founder",
+      company: "VentureArts",
+      photo: ErdemEris,
+      linkedin: "https://www.linkedin.com/in/erdemeris",
     },
   ];
 
