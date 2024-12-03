@@ -7,7 +7,10 @@ import ErolOzguner from "../assets/speakers/ErolÖzgüner.jpg";
 import CanDagdelen from "../assets/speakers/CanDagdelen.jpg";
 import ErolYilmaz from "../assets/speakers/ErolYilmaz.jpg";
 import MuratErtem from "../assets/speakers/MuratErtem.jpg";
-import BarısYurduseven from "../assets/speakers/BarısYurduseven.jpg"
+import BarısYurduseven from "../assets/speakers/BarısYurduseven.jpg";
+import IlkemOzar from "../assets/speakers/IlkemOzar.jpg";
+import AnilTangül from "../assets/speakers/AnilTangül.jpg";
+import BetülErtem from "../assets/speakers/BetülErtemYildiz.jpg";
 
 const Speakers = () => {
   const speakers = [
@@ -28,7 +31,7 @@ const Speakers = () => {
       linkedin: "https://www.linkedin.com/in/alperkaracar",
     },
     {
-      name: "Osman",
+      name: "Taşkın",
       surname: "Aksoy",
       title: "Co-Founder & CEO",
       company: "Linktera",
@@ -71,9 +74,34 @@ const Speakers = () => {
       name: "Barış",
       surname: "Yurduseven",
       title: "Co-Founder & CEO",
-      company: "SoftLandingTR",
+      company: "Paraph",
       photo: BarısYurduseven,
       linkedin: "https://www.linkedin.com/in/barisyurduseven",
+    },
+    {
+      name: "İlkem",
+      surname: "Özar",
+      title: "Genel Müdür",
+      company: "Kaspersky Türkiye",
+      photo: IlkemOzar,
+      linkedin: "https://www.linkedin.com/in/ilkemozar",
+    },
+    {
+      name: "Anıl",
+      surname: "Tangül",
+      title: "CTO",
+      company: "NKolay",
+      photo: AnilTangül,
+      linkedin: "https://www.linkedin.com/in/aniltangul",
+    },
+    {
+      name: "Betül Ertem",
+      surname: "Yıldız",
+      title: "Yönetişim, Risk ve Uyum Ortağı",
+      company: "BDO Türkiye",
+      photo: BetülErtem,
+      linkedin:
+        "https://www.linkedin.com/in/bet%C3%BCl-ertem-y%C4%B1ld%C4%B1z",
     },
   ];
 
