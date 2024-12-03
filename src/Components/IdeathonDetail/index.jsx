@@ -33,7 +33,7 @@ const IdeathonDetail = () => {
         {/* Teknik Şartname ve Sunum Taslağı İndirme Butonları */}
         <div className="flex flex-col sm:flex-row justify-center gap-6 mb-12">
           <a
-            href="/IdeathonTeknikSartname.pdf"
+            href="/tekniksartname.pdf"
             download
             className="flex items-center justify-center bg-gradient-to-r from-blue-600 to-teal-500 text-white py-3 px-6 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105 text-center"
           >

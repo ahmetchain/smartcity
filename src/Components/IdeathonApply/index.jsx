@@ -27,17 +27,48 @@ const IdeathonApply = () => {
     }
   };
 
-  const handleKVKKClick = () => {
-    navigate("/kvkk");
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.kvkkAccepted || !formData.termsAccepted) {
       alert("Lütfen tüm şartları kabul edin.");
       return;
     }
-    console.log("Form submitted:", formData);
+
+    const formPayload = {
+      member1Name: formData.member1Name,
+      member1Phone: formData.member1Phone,
+      member1Email: formData.member1Email,
+      member2Name: formData.member2Name,
+      member3Name: formData.member3Name,
+      ideaSummary: formData.ideaSummary,
+      presentation: formData.presentation ? formData.presentation.name : null,
+      kvkkAccepted: formData.kvkkAccepted,
+      termsAccepted: formData.termsAccepted,
+    };
+
+    try {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/posts",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formPayload),
+        }
+      );
+
+      const data = await response.json();
+      console.log("Form successfully submitted:", data);
+      alert("Başvurunuz başarıyla gönderildi!");
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      alert("Form gönderimi sırasında bir hata oluştu.");
+    }
+  };
+
+  const handleKVKKClick = () => {
+    navigate("/kvkk");
   };
 
   return (
@@ -152,7 +183,7 @@ const IdeathonApply = () => {
             />
             <span className="text-gray-600 text-sm">
               <a href="/kvkk" className="text-blue-600 underline mr-1">
-                KVKK 
+                KVKK
               </a>
               metnini okudum ve onaylıyorum.
             </span>
