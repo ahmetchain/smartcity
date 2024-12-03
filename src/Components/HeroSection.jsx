@@ -19,7 +19,8 @@ const HeroSection = () => {
           kentsel inovasyonun potansiyelini keşfetmek için tasarlanmıştır.
         </p>
         <a
-          href="/register"
+          href="https://tuzlatekmer.com/eventApplications/new "
+          target="_blank"
           className="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-3 px-6 lg:px-8 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105"
         >
           Şimdi Kaydol

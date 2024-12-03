@@ -38,15 +38,6 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const handleNavigateToApply = () => {
-    navigate("/ideathon-apply");
-    setIsMenuOpen(false);
-  };
-
-  const handleNavigateToRegister = () => {
-    navigate("/register");
-    setIsMenuOpen(false);
-  };
   return (
     <>
       <header
@@ -111,12 +102,14 @@ const Header = () => {
             >
               İletişim
             </a>
-            <button
-              onClick={handleNavigateToApply}
-              className="ml-4 bg-gradient-to-r from-blue-600 to-teal-500 text-white py-2 px-4 rounded-lg shadow hover:from-blue-700 hover:to-teal-600 transition duration-300"
+            <a
+              href="https://tuzlatekmer.com/ideathonApplications/new"
+              target="_blank"
             >
-              İdeathon Başvuru
-            </button>
+              <button className="ml-4 bg-gradient-to-r from-blue-600 to-teal-500 text-white py-2 px-4 rounded-lg shadow hover:from-blue-700 hover:to-teal-600 transition duration-300">
+                İdeathon Başvuru
+              </button>
+            </a>
           </nav>
 
           {/* Mobil Menü Butonu */}
@@ -149,18 +142,22 @@ const Header = () => {
             >
               Anasayfa
             </a>
-            <button
-              onClick={handleNavigateToRegister}
-              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+            <a
+              href="https://tuzlatekmer.com/eventApplications/new"
+              target="_blank"
             >
-              Etkinlik Kayıt
-            </button>
-            <button
-              onClick={handleNavigateToApply}
-              className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100"
+              <button className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                Etkinlik Kayıt
+              </button>
+            </a>
+            <a
+              href="https://tuzlatekmer.com/ideathonApplications/new"
+              target="_blank"
             >
-              İdeathon Başvuru
-            </button>
+              <button className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                İdeathon Başvuru
+              </button>
+            </a>
           </div>
         </>
       )}

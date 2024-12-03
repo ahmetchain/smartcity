@@ -1,14 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
 
 const IdeathonDetail = () => {
-  const navigate = useNavigate();
-
-  const handleApplyClick = () => {
-    navigate("/ideathon-apply");
-  };
-
   const awards = [
     {
       place: "1.",
@@ -131,12 +124,14 @@ const IdeathonDetail = () => {
 
         {/* Ödüller ve Başvuru */}
         <div className="flex justify-center mt-8">
-          <button
-            onClick={handleApplyClick}
-            className="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-4 px-10 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105 text-lg"
+          <a
+            href="https://tuzlatekmer.com/ideathonApplications/new"
+            target="_blank"
           >
-            Başvuru Yap
-          </button>
+            <button className="bg-gradient-to-r from-blue-600 to-teal-500 text-white py-4 px-10 rounded-lg shadow-lg hover:from-blue-700 hover:to-teal-600 transition-transform transform hover:scale-105 text-lg">
+              Başvuru Yap
+            </button>
+          </a>
         </div>
       </div>
     </section>
