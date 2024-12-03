@@ -1,19 +1,85 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import SpeakerPhoto from "../assets/osmankuzucu.webp";
+import OsmanKuzucu from "../assets/speakers/osmankuzucu.webp";
+import AlperKaracar from "../assets/speakers/alperkaracar.jpg";
+import OsmanAksoy from "../assets/speakers/TaskinOsmanAksoy.jpg";
+import ErolOzguner from "../assets/speakers/ErolÖzgüner.jpg";
+import CanDagdelen from "../assets/speakers/CanDagdelen.jpg";
+import ErolYilmaz from "../assets/speakers/ErolYilmaz.jpg";
+import MuratErtem from "../assets/speakers/MuratErtem.jpg";
+import BarısYurduseven from "../assets/speakers/BarısYurduseven.jpg"
 
 const Speakers = () => {
   const speakers = [
     {
-      name: "Osman Kuzucu",
+      name: "Osman",
+      surname: "Kuzucu",
       title: "CEO",
       company: "Omchain Foundation",
-      photo: SpeakerPhoto,
-      session: "Açılış Konuşması: Kentsel İnovasyonun Geleceği",
-      linkedin: "https://www.linkedin.com/in/osmankuzucu", // LinkedIn URL
+      photo: OsmanKuzucu,
+      linkedin: "https://www.linkedin.com/in/osmankuzucu",
     },
-    // Daha fazla konuşmacı eklenebilir
+    {
+      name: "Alper",
+      surname: "Karaçar",
+      title: "Danışmanlık Bölüm Başkanı ",
+      company: "KPMG Türkiye",
+      photo: AlperKaracar,
+      linkedin: "https://www.linkedin.com/in/alperkaracar",
+    },
+    {
+      name: "Osman",
+      surname: "Aksoy",
+      title: "Co-Founder & CEO",
+      company: "Linktera",
+      photo: OsmanAksoy,
+      linkedin: "https://www.linkedin.com/in/taskin-osman-aksoy-99a10a21",
+    },
+    {
+      name: "Erol",
+      surname: "Özgüner",
+      title: "Teknoloji Grup Başkanı",
+      company: "İBB",
+      photo: ErolOzguner,
+      linkedin: "https://www.linkedin.com/in/erol-%C3%B6zg%C3%BCner-78893a22",
+    },
+    {
+      name: "Can",
+      surname: "Dağdelen",
+      title: "Genel Müdür",
+      company: "İSBAK",
+      photo: CanDagdelen,
+      linkedin: "https://www.linkedin.com/in/candagdelen",
+    },
+    {
+      name: "Erol",
+      surname: "Yılmaz",
+      title: "CEO",
+      company: "Çekino Savunma",
+      photo: ErolYilmaz,
+      linkedin: "https://www.linkedin.com/in/erolyilmazz",
+    },
+    {
+      name: "Murat",
+      surname: "Ertem",
+      title: "Genel Müdür",
+      company: "Dgpays",
+      photo: MuratErtem,
+      linkedin: "https://www.linkedin.com/in/murat-ertem",
+    },
+    {
+      name: "Barış",
+      surname: "Yurduseven",
+      title: "Co-Founder & CEO",
+      company: "SoftLandingTR",
+      photo: BarısYurduseven,
+      linkedin: "https://www.linkedin.com/in/barisyurduseven",
+    },
   ];
+
+  const sortedSpeakers = speakers.sort((a, b) =>
+    a.surname.localeCompare(b.surname)
+  );
 
   return (
     <section id="speakers" className="py-16 ">
@@ -23,30 +89,30 @@ const Speakers = () => {
         </h2>
         <div
           className={`grid ${
-            speakers.length === 1
+            sortedSpeakers.length === 1
               ? "grid-cols-1 place-items-center"
-              : "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+              : "grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 place-items-center gap-8"
           }`}
         >
-          {speakers.map((speaker, index) => (
+          {sortedSpeakers.map((speaker, index) => (
             <div
               key={index}
-              className="relative group transform hover:-translate-y-2 transition duration-300 w-[330px] lg:w-[350px] h-[500px]"
+              className="relative group transform hover:-translate-y-2 transition duration-300 w-[330px] lg:w-[350px] h-[520px]"
             >
               {/* Gradient Border */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-500 rounded-3xl p-1"></div>
               {/* Card Content */}
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg w-full h-full flex flex-col justify-between">
-                <div className="w-full h-[70%] overflow-hidden rounded-t-3xl">
+                <div className="w-full h-[80%] overflow-hidden rounded-t-3xl">
                   <img
                     src={speaker.photo}
-                    alt={speaker.name}
+                    alt={`${speaker.name} ${speaker.surname}`}
                     className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="p-4 text-center flex flex-col justify-between ">
                   <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                    {speaker.name}
+                    {speaker.name} {speaker.surname}
                   </h3>
                   <div className="flex flex-col items-center text-blue-600 text-lg">
                     <span className="font-medium">{speaker.title}</span>
