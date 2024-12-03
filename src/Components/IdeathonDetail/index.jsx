@@ -9,8 +9,26 @@ const IdeathonDetail = () => {
     navigate("/ideathon-apply");
   };
 
+  const awards = [
+    {
+      place: "1.",
+      prize: "Sürpriz Ödül",
+      color: "bg-white ",
+    },
+    {
+      place: "2.",
+      prize: "Sürpriz Ödül",
+      color: "bg-white ",
+    },
+    {
+      place: "3.",
+      prize: "Sürpriz Ödül",
+      color: "bg-white ",
+    },
+  ];
+
   return (
-    <section className="py-12 mt-14  text-gray-800 relative">
+    <section className="py-12 mt-14 text-gray-800 relative">
       <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none"></div>
 
       <div className="container mx-auto px-4">
@@ -87,6 +105,28 @@ const IdeathonDetail = () => {
             <li>Kentsel Hareketlilik ve Erişilebilirlik</li>
             <li>Çevresel Gözetim ve Koruma</li>
           </ul>
+        </div>
+
+        {/* Ödüller */}
+        <div className="mb-12">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-6 text-center">
+            Ödüller
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {awards.map((award, index) => (
+              <div
+                key={index}
+                className={`p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 bg-gradient-to-br ${award.color} text-white flex flex-col items-center`}
+              >
+                <div className="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500  font-bold mb-4">
+                  {award.place}
+                </div>
+                <p className="text-xl font-medium text-gray-600 text-center">
+                  {award.prize}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Ödüller ve Başvuru */}
