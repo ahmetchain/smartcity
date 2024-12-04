@@ -12,6 +12,8 @@ import IlkemOzar from "../assets/speakers/IlkemOzar.jpg";
 import AnilTangül from "../assets/speakers/AnilTangül.jpg";
 import BetülErtem from "../assets/speakers/BetülErtemYildiz.jpg";
 import ErdemEris from "../assets/speakers/ErdemEris.jpg";
+import BarisUz from "../assets/speakers/BarisUz.jpg";
+import NeslihanTekmen from "../assets/speakers/NeslihanTekmen.jpg";
 
 const Speakers = () => {
   const speakers = [
@@ -110,6 +112,23 @@ const Speakers = () => {
       company: "VentureArts",
       photo: ErdemEris,
       linkedin: "https://www.linkedin.com/in/erdemeris",
+    },
+    {
+      name: "Barış",
+      surname: "Uz",
+      title: "CEO",
+      company: "Esri Türkiye",
+      photo: BarisUz,
+      linkedin: "https://www.linkedin.com/in/barisuz",
+    },
+    {
+      name: "Neslihan",
+      surname: "Tekmen",
+      title: "Ulaşim Segmenti Yöneticisi",
+      company: "Hitachi Energy",
+      photo: NeslihanTekmen,
+      linkedin:
+        "https://www.linkedin.com/in/neslihan-tekmen-73024539/?originalSubdomain=tr",
     },
   ];
 
