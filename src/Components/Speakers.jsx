@@ -14,6 +14,7 @@ import BetülErtem from "../assets/speakers/BetülErtemYildiz.jpg";
 import ErdemEris from "../assets/speakers/ErdemEris.jpg";
 import BarisUz from "../assets/speakers/BarisUz.jpg";
 import NeslihanTekmen from "../assets/speakers/NeslihanTekmen.jpg";
+import CicekBayulken from "../assets/speakers/CicekBayulken.jpg"
 
 const Speakers = () => {
   const speakers = [
@@ -129,6 +130,15 @@ const Speakers = () => {
       photo: NeslihanTekmen,
       linkedin:
         "https://www.linkedin.com/in/neslihan-tekmen-73024539/?originalSubdomain=tr",
+    },
+    {
+      name: "Çiçek",
+      surname: "Bayülken",
+      title: "Bölge Müdürü",
+      company: "Pure Storage",
+      photo: CicekBayulken,
+      linkedin:
+        "https://www.linkedin.com/in/cicek-bayulken-86986919/",
     },
   ];
 
