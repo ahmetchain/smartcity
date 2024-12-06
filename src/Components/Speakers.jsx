@@ -134,7 +134,7 @@ const Speakers = () => {
     {
       name: "Çiçek",
       surname: "Bayülken",
-      title: "Bölge Müdürü",
+      title: "Türkiye ve CIS Bölge Müdürü",
       company: "Pure Storage",
       photo: CicekBayulken,
       linkedin:
