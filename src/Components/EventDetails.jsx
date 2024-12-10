@@ -21,7 +21,7 @@ const EventDetails = () => {
                 Tarihler
               </h3>
               <p className="text-lg md:text-xl text-gray-600">
-                23-24-25 Aralık 2024
+                23-24 Aralık 2024
               </p>
             </div>
           </div>

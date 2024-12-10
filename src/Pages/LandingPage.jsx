@@ -15,9 +15,7 @@ export default function LandingPage() {
       <HeroSection />
       <EventDetails />
       <Agenda />
-      <IdeathonOverview />
       <Speakers />
-      <Sponsors />
       <Footer />
     </>
   );

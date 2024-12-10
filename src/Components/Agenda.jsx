@@ -39,8 +39,8 @@ const Agenda = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Gün 1 */}
           <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6">
-            <h3 className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-4 border-b border-gray-300 pb-2">
-              Gün 1
+            <h3 className="text-2xl text-blue-400 md:text-3xl font-semibold  mb-4 border-b border-gray-300 pb-2">
+              23 Aralık
             </h3>
             <table className="w-full text-left">
               <thead>
@@ -65,7 +65,7 @@ const Agenda = () => {
           {/* Gün 2 */}
           <div className="bg-white text-gray-800 rounded-lg shadow-lg p-6">
             <h3 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-4 border-b border-gray-300 pb-2">
-              Gün 2
+              24 Aralık
             </h3>
             <table className="w-full text-left">
               <thead>

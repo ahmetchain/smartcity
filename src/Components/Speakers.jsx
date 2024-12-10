@@ -14,18 +14,10 @@ import BetülErtem from "../assets/speakers/BetülErtemYildiz.jpg";
 import ErdemEris from "../assets/speakers/ErdemEris.jpg";
 import BarisUz from "../assets/speakers/BarisUz.jpg";
 import NeslihanTekmen from "../assets/speakers/NeslihanTekmen.jpg";
-import CicekBayulken from "../assets/speakers/CicekBayulken.jpg"
+import CicekBayulken from "../assets/speakers/CicekBayulken.jpg";
 
 const Speakers = () => {
   const speakers = [
-    {
-      name: "Osman",
-      surname: "Kuzucu",
-      title: "CEO",
-      company: "Omchain Foundation",
-      photo: OsmanKuzucu,
-      linkedin: "https://www.linkedin.com/in/osmankuzucu",
-    },
     {
       name: "Alper",
       surname: "Karaçar",
@@ -74,14 +66,7 @@ const Speakers = () => {
       photo: MuratErtem,
       linkedin: "https://www.linkedin.com/in/murat-ertem",
     },
-    {
-      name: "Barış",
-      surname: "Yurduseven",
-      title: "Co-Founder & CEO",
-      company: "Paraph",
-      photo: BarısYurduseven,
-      linkedin: "https://www.linkedin.com/in/barisyurduseven",
-    },
+
     {
       name: "İlkem",
       surname: "Özar",
@@ -137,8 +122,7 @@ const Speakers = () => {
       title: "Türkiye ve CIS Bölge Müdürü",
       company: "Pure Storage",
       photo: CicekBayulken,
-      linkedin:
-        "https://www.linkedin.com/in/cicek-bayulken-86986919/",
+      linkedin: "https://www.linkedin.com/in/cicek-bayulken-86986919/",
     },
   ];
 

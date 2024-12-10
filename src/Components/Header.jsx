@@ -88,28 +88,6 @@ const Header = () => {
             >
               Konuşmacılar
             </a>
-            <a
-              href="#sponsors"
-              onClick={(e) => handleSmoothScroll(e, "#sponsors")}
-              className="text-gray-700 hover:text-gray-900"
-            >
-              Sponsorlar
-            </a>
-            <a
-              href="#footer"
-              onClick={(e) => handleSmoothScroll(e, "#footer")}
-              className="text-gray-700 hover:text-gray-900"
-            >
-              İletişim
-            </a>
-            <a
-              href="https://tuzlatekmer.com/ideathonApplications/new"
-              target="_blank"
-            >
-              <button className="ml-4 bg-gradient-to-r from-blue-600 to-teal-500 text-white py-2 px-4 rounded-lg shadow hover:from-blue-700 hover:to-teal-600 transition duration-300">
-                İdeathon Başvuru
-              </button>
-            </a>
           </nav>
 
           {/* Mobil Menü Butonu */}
@@ -148,14 +126,6 @@ const Header = () => {
             >
               <button className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Etkinlik Kayıt
-              </button>
-            </a>
-            <a
-              href="https://tuzlatekmer.com/ideathonApplications/new"
-              target="_blank"
-            >
-              <button className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
-                İdeathon Başvuru
               </button>
             </a>
           </div>

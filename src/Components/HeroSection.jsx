@@ -12,7 +12,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 mb-4 max-w-3xl">
-          Akıllı Şehir Teknolojileri Zirvesi & Ideathon
+          Akıllı Şehir Teknolojileri Zirvesi & 23-24 Aralık
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 max-w-2xl">
           Etkinliğimiz, sürdürülebilir şehirlerin geleceğini şekillendirmek ve
