@@ -15,6 +15,7 @@ import ErdemEris from "../assets/speakers/ErdemEris.jpg";
 import BarisUz from "../assets/speakers/BarisUz.jpg";
 import NeslihanTekmen from "../assets/speakers/NeslihanTekmen.jpg";
 import CicekBayulken from "../assets/speakers/CicekBayulken.jpg";
+import HarunEsur from "../assets/speakers/HarunEsur.jpg";
 
 const Speakers = () => {
   const speakers = [
@@ -123,6 +124,14 @@ const Speakers = () => {
       company: "Pure Storage",
       photo: CicekBayulken,
       linkedin: "https://www.linkedin.com/in/cicek-bayulken-86986919/",
+    },
+    {
+      name: "Harun",
+      surname: "Esur",
+      title: "Co-Founder",
+      company: "Sceptive",
+      photo: HarunEsur,
+      linkedin: "https://www.linkedin.com/in/harunesur/",
     },
   ];
 
