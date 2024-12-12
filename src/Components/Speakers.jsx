@@ -1,13 +1,11 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import OsmanKuzucu from "../assets/speakers/osmankuzucu.webp";
 import AlperKaracar from "../assets/speakers/alperkaracar.jpg";
 import OsmanAksoy from "../assets/speakers/TaskinOsmanAksoy.jpg";
 import ErolOzguner from "../assets/speakers/ErolÖzgüner.jpg";
 import CanDagdelen from "../assets/speakers/CanDagdelen.jpg";
 import ErolYilmaz from "../assets/speakers/ErolYilmaz.jpg";
 import MuratErtem from "../assets/speakers/MuratErtem.jpg";
-import BarısYurduseven from "../assets/speakers/BarısYurduseven.jpg";
 import IlkemOzar from "../assets/speakers/IlkemOzar.jpg";
 import AnilTangül from "../assets/speakers/AnilTangül.jpg";
 import BetülErtem from "../assets/speakers/BetülErtemYildiz.jpg";
@@ -16,6 +14,7 @@ import BarisUz from "../assets/speakers/BarisUz.jpg";
 import NeslihanTekmen from "../assets/speakers/NeslihanTekmen.jpg";
 import CicekBayulken from "../assets/speakers/CicekBayulken.jpg";
 import HarunEsur from "../assets/speakers/HarunEsur.jpg";
+import EnesAladas from "../assets/speakers/EnesAladas.jpg";
 
 const Speakers = () => {
   const speakers = [
@@ -132,6 +131,14 @@ const Speakers = () => {
       company: "Sceptive",
       photo: HarunEsur,
       linkedin: "https://www.linkedin.com/in/harunesur/",
+    },
+    {
+      name: "Enes",
+      surname: "Aladaş",
+      title: "Co-Founder & CEO",
+      company: "RumiTech",
+      photo: EnesAladas,
+      linkedin: "https://www.linkedin.com/in/enes-alada%C5%9F-33a01489/",
     },
   ];
 
