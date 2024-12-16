@@ -11,12 +11,11 @@ import AnilTangül from "../assets/speakers/AnilTangül.jpg";
 import BetülErtem from "../assets/speakers/BetülErtemYildiz.jpg";
 import ErdemEris from "../assets/speakers/ErdemEris.jpg";
 import BarisUz from "../assets/speakers/BarisUz.jpg";
-import NeslihanTekmen from "../assets/speakers/NeslihanTekmen.jpg";
 import CicekBayulken from "../assets/speakers/CicekBayulken.jpg";
 import HarunEsur from "../assets/speakers/HarunEsur.jpg";
 import EnesAladas from "../assets/speakers/EnesAladas.jpg";
-import KutlaySimsek from "../assets/speakers/KutlaySimsek.jpg"
-
+import KutlaySimsek from "../assets/speakers/KutlaySimsek.jpg";
+import MuratYilmaz from "../assets/speakers/MuratYilmaz.jpg";
 const Speakers = () => {
   const speakers = [
     {
@@ -109,13 +108,12 @@ const Speakers = () => {
       linkedin: "https://www.linkedin.com/in/barisuz",
     },
     {
-      name: "Neslihan",
-      surname: "Tekmen",
-      title: "Ulaşim Segmenti Yöneticisi",
-      company: "Hitachi Energy",
-      photo: NeslihanTekmen,
-      linkedin:
-        "https://www.linkedin.com/in/neslihan-tekmen-73024539/?originalSubdomain=tr",
+      name: "Murat",
+      surname: "Yılmaz",
+      title: "Ülke Müdürü",
+      company: "Hitachi Europe Türkiye",
+      photo: MuratYilmaz,
+      linkedin: "https://www.linkedin.com/in/murat-yilmaz-47616534/",
     },
     {
       name: "Çiçek",
@@ -140,7 +138,8 @@ const Speakers = () => {
       company: "RumiTech",
       photo: EnesAladas,
       linkedin: "https://www.linkedin.com/in/enes-alada%C5%9F-33a01489/",
-    },    {
+    },
+    {
       name: "Kutlay",
       surname: "Şimşek",
       title: "Co-founder",
