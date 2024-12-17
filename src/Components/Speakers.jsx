@@ -59,15 +59,6 @@ const Speakers = () => {
       linkedin: "https://www.linkedin.com/in/erolyilmazz",
     },
     {
-      name: "Murat",
-      surname: "Ertem",
-      title: "Genel Müdür",
-      company: "Dgpays",
-      photo: MuratErtem,
-      linkedin: "https://www.linkedin.com/in/murat-ertem",
-    },
-
-    {
       name: "İlkem",
       surname: "Özar",
       title: "Genel Müdür",
