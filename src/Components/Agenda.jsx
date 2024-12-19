@@ -19,7 +19,7 @@ const Agenda = () => {
     { time: "14:50-15:20", event: "Panel 2: Veri Odaklı Kentsel Yönetim" },
     {
       time: "15:20-16:00",
-      event: "Panel 3: Akıllı Şehirlerde Yerel Yönetimlerin Rolü",
+      event: "Panel 3: Akıllı Şehirlerde Girişim ve Regülasyonların Rolü",
     },
     { time: "16:00-17:00", event: "Kapanış Konuşması & Networking" },
   ];

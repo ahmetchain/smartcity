@@ -86,7 +86,7 @@ const Speakers = () => {
       name: "Erdem",
       surname: "Eriş",
       title: "Co-Founder",
-      company: "VentureArts",
+      company: "CyberArts & VentureArts",
       photo: ErdemEris,
       linkedin: "https://www.linkedin.com/in/erdemeris",
     },
