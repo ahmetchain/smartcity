@@ -54,7 +54,7 @@ const Speakers = () => {
       name: "Erol",
       surname: "Yılmaz",
       title: "CEO",
-      company: "Çekino Savunma",
+      company: "Çekino Bilgi Teknolojileri",
       photo: ErolYilmaz,
       linkedin: "https://www.linkedin.com/in/erolyilmazz",
     },
