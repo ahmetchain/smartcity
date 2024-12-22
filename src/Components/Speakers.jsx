@@ -14,7 +14,6 @@ import BarisUz from "../assets/speakers/BarisUz.jpg";
 import CicekBayulken from "../assets/speakers/CicekBayulken.jpg";
 import HarunEsur from "../assets/speakers/HarunEsur.jpg";
 import EnesAladas from "../assets/speakers/EnesAladas.jpg";
-import KutlaySimsek from "../assets/speakers/KutlaySimsek.jpg";
 import MuratYilmaz from "../assets/speakers/MuratYilmaz.jpg";
 const Speakers = () => {
   const speakers = [
@@ -129,14 +128,6 @@ const Speakers = () => {
       company: "RumiTech",
       photo: EnesAladas,
       linkedin: "https://www.linkedin.com/in/enes-alada%C5%9F-33a01489/",
-    },
-    {
-      name: "Kutlay",
-      surname: "Şimşek",
-      title: "Co-founder",
-      company: "Ereteam Analytics USA",
-      photo: KutlaySimsek,
-      linkedin: "https://www.linkedin.com/in/kutlay-simsek-930358/",
     },
   ];
 
